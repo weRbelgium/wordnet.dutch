@@ -9,7 +9,7 @@ The  **wordnet.dutch** package provides the Open Dutch Wordnet database in R for
 This data is available in several objects:
 
 - dutch_synset: Dutch synthetic sets
-- ...
+- UNDER CONSTRUCTION - please wait untill legal issues are
 
 
 ## Installation
@@ -24,6 +24,9 @@ Have a look at the vignette
 ```
 vignette("open-dutch-wordnet-introduction", package = "wordnet.dutch")
 ```
+
+The original data in the wordnet.dutch R package is provided at  https://github.com/MartenPostma/OpenDutchWordnet, namely at resources/odwn/odwn_orbn_gwg-LMF_1.3.xml.gz.
+Importing this data in R has been done based on the scripts available at the inst/dev directory.
 
 ## Support in text mining
 
