@@ -1,0 +1,56 @@
+---
+title: "Open Dutch Wordnet for R users"
+author: "Jan Wijffels"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Open Dutch Wordnet}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+
+```{r setup, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.width=10, fig.height=10, out.width="100%", out.height="100%", comment=NA)
+```
+
+Introduction
+------------
+
+Open Dutch WordNet is a Dutch lexical semantic database. The database provides cognitive synonyms and lexical entries for the Dutch language.
+
+The  **wordnet.dutch** package provides the Open Dutch Wordnet database in R format and provides R functions to easily work with the dataset. 
+
+
+```{r package}
+library(wordnet.dutch)
+```
+
+Synthetic sets
+----------------------------
+
+Dutch synthetic sets are available in the **dutch_synset** dataset.
+
+```{r syntheticsets}
+data(dutch_synset)
+str(dutch_synset)
+```
+
+There are 117914 synthetic sets available in the Open Dutch Wordnet. Each can have several relations to other synthetis sets and each can have several definitions.
+ 
+```{r syntheticsets-general}
+nrow(dutch_synset$ids)
+nrow(dutch_synset$relations)
+nrow(dutch_synset$definitions)
+
+sort(table(dutch_synset$relations$relType), decreasing = TRUE)
+table(dutch_synset$definitions$provenance, dutch_synset$definitions$language)
+```
+
+
+
+Support in text mining
+----------------------------
+Need support in text mining. 
+Contact BNOSAC: http://www.bnosac.be
