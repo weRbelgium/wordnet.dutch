@@ -1,0 +1,22 @@
+citHeader("When using wordnet.dutch, please cite both Open Dutch Wordnet as well as the wordnet.dutch R package")
+
+bibentry(bibtype = "InProceedings", 
+         author = "Marten Postma and Emiel van Miltenburg and Roxane Segers and Anneleen Schoen and Piek Vossen",
+         title =	"Open {Dutch} {WordNet}",
+         booktitle = "Proceedings of the Eight Global Wordnet Conference",
+         year = 2016,
+         address =	"Bucharest, Romania")
+
+
+if(!exists("meta") || is.null(meta)){
+  meta <- packageDescription("wordnet.dutch")
+}
+year <- sub("-.*", "", meta$Date)
+note <- sprintf("R package version %s", meta$Version)
+
+bibentry("Manual",
+         title = "wordnet.dutch: Open Dutch WordNet",
+         author = c(person("Jan", "Wijffels", email = "jwijffels@bnosac.be")),
+         year = year,
+         note = note,
+         url = "https://github.com/jwijffels/wordnet.dutch")
