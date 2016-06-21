@@ -1,6 +1,6 @@
 # Open Dutch Wordnet in R
 
-Open Dutch WordNet is a Dutch lexical semantic database. The database provides cognitive synonyms and lexical entries for the Dutch language.
+Open Dutch WordNet is a Dutch lexical semantic database. The database provides cognitive synonyms and lexical entries for the Dutch language under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license.
 
 ![](inst/img/wordnet-dutch-logo.png)
 
@@ -9,7 +9,7 @@ The  **wordnet.dutch** package provides the Open Dutch Wordnet database in R for
 This data is available in several objects:
 
 - dutch_synset: Dutch synthetic sets
-- UNDER CONSTRUCTION - please wait untill legal issues are
+- UNDER CONSTRUCTION - please wait for the dutch lexical entries
 
 
 ## Installation
